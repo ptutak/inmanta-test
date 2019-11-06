@@ -1,0 +1,6 @@
+name: Hello world
+description: An Inmanta hello world like project!
+modulepath: libs
+downloadpath: libs
+repo:
+    - https://github.com/inmanta/
