@@ -1,3 +1,1 @@
-std::AgentConfig(agentname=host.name, autostart=true)
-host = std::Host(name="localhost", os=std::linux)
-std::File(host=host, path="/tmp/test", owner="inmanta", group="inmanta", mode=600, content="abcde")
+std::print(std::get_env("HELLO_WORLD_VAR"))
