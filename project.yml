@@ -4,3 +4,4 @@ modulepath: libs
 downloadpath: libs
 repo:
     - https://github.com/inmanta/
+    - https://github.com/ptutak/example_module
