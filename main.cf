@@ -3,3 +3,5 @@ import example_module
 std::print(std::get_env("HELLO_WORLD_VAR"))
 
 std::print(example_module::upper("testinnnng"))
+
+std::print("END")
