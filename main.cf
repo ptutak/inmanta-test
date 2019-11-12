@@ -6,5 +6,9 @@ std::print(std::get_env("HELLO_WORLD_VAR"))
 std::print(example_module::upper("testinnnng"))
 
 std::print("END")
+Przemek = services::Employer()
 
-std::print(services::Przemek.employees)
+Piotr = services::Employee()
+
+Przemek.emploees = Piotr
+std::print(Przemek.employees)
