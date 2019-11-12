@@ -7,10 +7,5 @@ std::print(example_module::upper("testinnnng"))
 
 std::print("END")
 
-przemek = services::Person(name="Przemyslaw Wawrzynczak")
 
 piotr = services::Person(name="Piotr Tutak")
-
-przemek.emploees = piotr
-
-#std::print(Przemek.employees)
