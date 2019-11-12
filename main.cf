@@ -8,7 +8,12 @@ std::print(example_module::upper("testinnnng"))
 std::print("END")
 
 
-piotr = services::Person()
+piotr = services::Employee(name="Piotr", address="Szczygla", salary=100.0)
 
+przemek = services::Employer(name="Przemek")
 std::print(piotr.name)
 std::print("name printed")
+
+przemek.employees = piotr
+
+std::print(przemek.employees)
