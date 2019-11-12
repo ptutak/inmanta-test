@@ -1,7 +1,10 @@
 import example_module
+import example_module::services as services
 
 std::print(std::get_env("HELLO_WORLD_VAR"))
 
 std::print(example_module::upper("testinnnng"))
 
 std::print("END")
+
+std::print(services::Przemek.employees)
