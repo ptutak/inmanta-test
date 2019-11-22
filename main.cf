@@ -17,3 +17,19 @@ std::print("name printed")
 przemek.employees = piotr
 
 std::print(przemek.employees)
+
+for employee in przemek.employees:
+    std::print("in a loop")
+    std::print(employee.name)
+end
+
+
+zenek = services::InheritedEmployee()
+
+std::print(zenek.test)
+
+piotr_tutak = services::Employee(address="Szczygla 7")
+
+std::print(piotr_tutak.name)
+
+test_resource = services::TestResource(name="main.cf", status="")
