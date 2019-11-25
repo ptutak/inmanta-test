@@ -32,4 +32,9 @@ piotr_tutak = services::Employee(address="Szczygla 7")
 
 std::print(piotr_tutak.name)
 
-test_resource = services::TestResource(name="main.cf", status="")
+test_resource = services::TestResource(name="main.cf")
+
+std::print(test_resource.status)
+
+
+example_module::out(przemek.employees)
