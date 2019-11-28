@@ -29,7 +29,6 @@ for employee in przemek.employees:
     std::print(employee.name)
 end
 
-
 zenek = services::InheritedEmployee()
 
 std::print(zenek.test)

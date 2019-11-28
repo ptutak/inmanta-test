@@ -2,6 +2,7 @@ name: Hello world
 description: An Inmanta hello world like project!
 modulepath: libs
 downloadpath: libs
+install_mode: master
 repo:
     - https://github.com/inmanta/
     - https://github.com/ptutak/
