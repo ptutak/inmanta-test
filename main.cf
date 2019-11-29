@@ -1,12 +1,7 @@
 import example_module
 import example_module::services as services
 import ip
-import redhat
-import redhat::epel
-import apache
-import mysql
-import web
-import drupal
+
 
 std::print(std::get_env("HELLO_WORLD_VAR"))
 
