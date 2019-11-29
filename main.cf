@@ -36,10 +36,6 @@ test_resource = services::TestResource(name="main.cf")
 services::TestResource(name="project.yml")
 test_resource2 = services::TestResource[name="project.yml"]
 
-field = services::Field(name="asdf name")
-
-test_resource.some_field = field
-
 std::print(test_resource.status)
 
 example_module::out(przemek.employees)
