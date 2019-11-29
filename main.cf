@@ -37,9 +37,7 @@ services::TestResource(name="project.yml")
 test_resource2 = services::TestResource[name="project.yml"]
 
 std::print(test_resource.status)
-
+std::print(test_resource.name)
 example_module::out(przemek.employees)
-
-std::print(test_resource.some_field)
 
 vm1=ip::Host(name="vm1", os=redhat::centos7, ip="172.28.0.4", remote_agent=true, remote_user="root")
