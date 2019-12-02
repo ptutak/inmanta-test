@@ -36,7 +36,6 @@ field = services::Field(name="example field name")
 
 test_resource = services::TestResource(name="main.cf")
 test_resource.field = field
-std::print(test_resource.field.name)
 services::TestResource(name="project.yml")
 test_resource2 = services::TestResource[name="project.yml"]
 test_resource2.field = field
