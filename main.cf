@@ -33,8 +33,11 @@ piotr_tutak = services::Employee(address="Szczygla 7")
 std::print(piotr_tutak.name)
 
 test_resource = services::TestResource(name="main.cf")
+
 services::TestResource(name="project.yml")
 test_resource2 = services::TestResource[name="project.yml"]
+field = services::Field(name="example field name")
+test_resource2.field = field
 
 std::print(test_resource.status)
 
