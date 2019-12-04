@@ -34,10 +34,10 @@ std::print(piotr_tutak.name)
 
 field = services::Field(name="example field name")
 
-test_resource = services::TestResource(name="main.cf")
+test_resource = services::TestResource(name="asdf.txt", content="This is asdf.txt content")
 test_resource.field = field
-services::TestResource(name="project.yml")
-test_resource2 = services::TestResource[name="project.yml"]
+services::TestResource(name="test.txt", content="My content lol")
+test_resource2 = services::TestResource[name="test.txt"]
 test_resource2.field = field
 
 std::print(test_resource.status)
