@@ -34,6 +34,8 @@ std::print(piotr_tutak.name)
 
 field = services::Field(name="example field name")
 
+simple_file = std::File(path="aaaa.txt", content="This is aaaa.txt content")
+
 test_resource = services::TestResource(name="asdf.txt", content="This is asdf.txt content")
 test_resource.field = field
 services::TestResource(name="test.txt", content="My content lol")
