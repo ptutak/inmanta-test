@@ -34,12 +34,12 @@ std::print(piotr_tutak.name)
 
 field = services::Field(name="example field name")
 
-simple_file = std::File(path="aaaa.txt", content="This is aaaa.txt content")
+vm1=ip::Host(name="vm1", os=redhat::centos7, ip="172.28.0.4", remote_agent=true, remote_user="root")
 
-test_resource = services::TestResource(name="asdf.txt", content="This is asdf.txt content")
+test_resource = services::TestResource(name="/tmp/asdf.txt", content="This is asdf.txt content")
 test_resource.field = field
-services::TestResource(name="test.txt", content="My content lol")
-test_resource2 = services::TestResource[name="test.txt"]
+services::TestResource(name="/tmp/test.txt", content="My content lol")
+test_resource2 = services::TestResource[name="/tmp/test.txt"]
 test_resource2.field = field
 
 std::print(test_resource.status)
@@ -47,5 +47,3 @@ std::print(test_resource.status)
 std::print(test_resource.name)
 
 example_module::out(przemek.employees)
-
-vm1=ip::Host(name="vm1", os=redhat::centos7, ip="172.28.0.4", remote_agent=true, remote_user="root")
